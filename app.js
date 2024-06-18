@@ -1,4 +1,5 @@
 /*-------------------------------- Constants --------------------------------*/
+
 const calculator = document.querySelector('#calculator');
 
 /*-------------------------------- Variables --------------------------------*/
@@ -26,6 +27,7 @@ calculator.addEventListener('click' , (event) => {
     }
 
 });
+
 /*-------------------------------- Functions --------------------------------*/
 
 function solveMath(arr) {
