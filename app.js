@@ -43,6 +43,9 @@ function solveMath(arr) {
     let result;
 
     try {
+        if(['+', '-', '*', '/'].includes(expression.slice(-1))) {
+            expression = expression.substring(0, expression.length - 1);
+        }
         result = eval(expression);
     } catch (e) {
         console.error('Error solving the operation:', e);
