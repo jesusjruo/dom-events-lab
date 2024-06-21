@@ -1,6 +1,7 @@
 /*-------------------------------- Constants --------------------------------*/
 
 const calculator = document.querySelector('#calculator');
+document.querySelector('.display').innerText = '0';
 
 /*-------------------------------- Variables --------------------------------*/
 
@@ -16,7 +17,7 @@ calculator.addEventListener('click' , (event) => {
     }
 
     if (event.target.classList.contains('clear')) {
-        document.querySelector('.display').innerText = '';
+        document.querySelector('.display').innerText = '0';
         display = '';
     }
 
